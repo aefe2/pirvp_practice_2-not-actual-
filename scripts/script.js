@@ -54,69 +54,74 @@
 //     // }
 // }
 
+let arr = []
+
+// function menu() {
+//     // let answer = +prompt('Select the property \n' +
+//     //     '1, for book name\n' +
+//     //     "2, for author's last name\n" +
+//     //     "3, for author's first name\n" +
+//     //     '4, for release date\n' +
+//     //     '5, for publishing\n' +
+//     //     '6, for price\n' +
+//     //     '7, for exit');
+//
+//     // switch (answer) {
+//     //     case 1:
+//     //         this.bookName = prompt('Book name');
+//     //         break;
+//     //     case 2:
+//     //         this.lastName = prompt("Author's last name");
+//     //         break;
+//     //     case 3:
+//     //         this.firstName = prompt("Author's first name");
+//     //         break;
+//     //     case 4:
+//     //         this.releaseDate = prompt('Release date of book', '1902');
+//     //         break;
+//     //     case 5:
+//     //         this.publishing = prompt('Publishing name');
+//     //         break;
+//     //     case 6:
+//     //         let money = +prompt('Book price');
+//     //         this.price = money + '₽';
+//     //         break;
+//     //     default:
+//     //         break;
+//     // }
+// }
 
 function MakeBook() {
-    let arr = []
-    let Book = {
-        bookName: 'no data',
-        author: {
-            lastName: 'no data',
-            firstName: 'no data',
-        },
-        releaseDate: 'no data',
-        publishing: 'no data',
-        price: 'no data',
-    }
-    function menu() {
-        let answer = +prompt('Select the property \n' +
-            '1, for book name\n' +
-            "2, for author's last name\n" +
-            "3, for author's first name\n" +
-            '4, for release date\n' +
-            '5, for publishing\n' +
-            '6, for price\n' +
-            '7, for exit');
 
+    this.bookName = prompt('');
+    this.author = {
+        lastName: prompt("Author's last name"),
+        firstName: prompt("Author's first name"),
+    };
+    this.releaseDate = prompt('Release date of book', '1902');
+    this.publishing = prompt('Publishing name');
+    this.price = +prompt('Book price');
 
-        switch (answer) {
-            case 1:
-                this.bookName = prompt();
-                break;
-            case 2:
-                this.lastName = prompt();
-                break;
-            case 3:
-                this.firstName = prompt();
-                break;
-            case 4:
-                this.releaseDate = prompt();
-                break;
-            case 5:
-                this.publishing = prompt();
-                break;
-            case 6:
-                this.price = prompt();
-                break
-            default:
-                break;
-        }
-    }
-    menu();
-    arr.push(this)
-    console.table(this)
+    arr.push(this);
 }
 
-new MakeBook()
-// «Книга»: название; автор (фамилия; имя); год выхода; издательство; себестоимость; цена; прибыль.
-while (1) {
-    let a = +prompt('1, if you want to continue');
-    if (a === 1) menu();
-    else break;
+// menu()
+let newBook = new MakeBook()
+
+// while (1) {
+//     let a = +prompt('1, if you want to continue');
+//     if (a === 1) menu();
+//     else break;
+// }
+for (let item of arr) {
+    console.log(item.bookName)
 }
+console.table(arr);
+
 
 
 // let user = {
-//     nam5e: "John",
+//     name: "John",
 //     age: 30
 // };
 //
