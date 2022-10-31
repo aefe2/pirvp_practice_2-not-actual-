@@ -8,29 +8,34 @@ function menu() {
         '6, for price\n' +
         '7, for exit');
 
-    while (true) {
-        if (answer === 1) {
-            this.bookName = prompt('Book name');
-        }
-        else if (answer === 2) {
-            this.lastName = prompt("Author's last name");
-        }
-        else if (answer === 3) {
-            this.firstName = prompt("Author's first name");
-        }
-        else if (answer === 4) {
-            this.releaseDate = prompt('Release date of book');
-        }
-        else if (answer === 5) {
-            this.publishing = prompt('Publishing name');
 
-        }
-        else if (answer === 6) {
-            this.price = prompt('Price of book')
-        }
-        else break;
+    switch (answer) {
+        case 1:
+
     }
+    // while (true) {
+    //     if (answer === 1) {
+    //         this.bookName = prompt('Book name');
+    //         break;
+    //     } else if (answer === 2) {
+    //         this.lastName = prompt("Author's last name");
+    //         break;
+    //     } else if (answer === 3) {
+    //         this.firstName = prompt("Author's first name");
+    //         break;
+    //     } else if (answer === 4) {
+    //         this.releaseDate = prompt('Release date of book');
+    //         break;
+    //     } else if (answer === 5) {
+    //         this.publishing = prompt('Publishing name');
+    //         break;
+    //     } else if (answer === 6) {
+    //         this.price = prompt('Price of book')
+    //         break;
+    //     } else break;
+    // }
 }
+
 menu()
 
 function makeBook() {
@@ -45,13 +50,17 @@ function makeBook() {
         publishing: 'no data',
         price: 'no data',
     }
-    arr.push(Book)
-    console.table(arr)
+    arr.push(this)
+    console.table(this)
 }
+
 makeBook()
 // «Книга»: название; автор (фамилия; имя); год выхода; издательство; себестоимость; цена; прибыль.
-
-
+while (1) {
+    let a = +prompt('1, if you want to continue');
+    if (a === 1) menu();
+    else break;
+}
 
 
 // let user = {
