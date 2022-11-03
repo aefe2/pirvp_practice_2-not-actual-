@@ -2,16 +2,22 @@
     margin: 0;
     padding: 0;
 }
+
 body {
-    background: linear-gradient(to bottom, black, purple) no-repeat;
-    height: 1000px;
+    background: linear-gradient(to bottom, black, #720172) no-repeat center  fixed;
+}
+.elem {
+    position: absolute;
+    padding: 7px;
 }
 .elem, .anchor {
-    border: 2px solid antiquewhite;
-    border-radius: 45px;
-    padding: 4px;
+    font-family: Arial, sans-serif;
+    border: 1px solid antiquewhite;
+    border-radius: 40px;
     color: white;
-    margin: 5px;
+}
+.anchor {
+    padding: 5px;
 }
 .container {
     width: 80px;

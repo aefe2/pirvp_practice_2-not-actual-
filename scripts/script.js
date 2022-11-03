@@ -89,17 +89,3 @@
 let elem =  document.querySelector('.elem');
 let anchor = document.querySelector('.anchor');
 
-// let value = prompt('Введите значение - позицию\n' +
-    'top, right, bottom', 'right');
-
-let positionAt = function(anchor, position, elem) {
-
-    if(value.toLowerCase() === 'right') {
-        elem.style.flexDirection = 'row';
-    } else if(value.toLowerCase() === 'top') {
-        elem.style.flexDirection = 'column';
-    } else if(value.toLowerCase() === 'bottom') {
-
-    }
-}
-positionAt(anchor, value, elem)
