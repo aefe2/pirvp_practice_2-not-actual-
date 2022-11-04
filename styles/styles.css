@@ -4,24 +4,29 @@
 }
 
 body {
-    background: linear-gradient(to bottom, black, #720172) no-repeat center  fixed;
+    background: linear-gradient(to bottom, #181818, #720172) no-repeat center fixed;
 }
-.elem {
-    position: absolute;
-    padding: 7px;
-}
-.elem, .anchor {
+div {
+    color: aliceblue;
     font-family: Arial, sans-serif;
-    border: 1px solid antiquewhite;
-    border-radius: 40px;
-    color: white;
-}
-.anchor {
-    padding: 5px;
+    font-size: 20px;
+    margin: 10px;
 }
 .container {
-    width: 80px;
-    height: 250px;
-    margin: auto;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    width: 130px;
+}
+.top, .anchor, .bottom, .right {
     text-align: center;
+    border: 1px solid rgba(222, 123, 221, 0.8);
+    border-radius: 50px;
+    padding: 6px;
+    width: 70px;
+}
+.right {
+    position: absolute;
+    top: 31%;
+    left: 70%;
 }
