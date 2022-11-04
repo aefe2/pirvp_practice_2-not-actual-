@@ -86,6 +86,46 @@
 //     console.table(arr)
 // }
 
-let elem =  document.querySelector('.elem');
-let anchor = document.querySelector('.anchor');
+
+let positionAt = function (anchor, position, elem) {
+    let rightHover = function () {
+        let right = document.querySelector('.right');
+        right.onmouseover = function () {
+            right.style.opacity = '1';
+            right.style.transitionDuration = '.5s'
+        };
+        right.onmouseout = function () {
+            right.style.opacity = '0';
+            right.style.transitionDuration = '.5s'
+        };
+    }
+    rightHover()
+
+    let topHover = function () {
+        let top = document.querySelector('.top');
+        top.onmouseover = function () {
+            top.style.opacity = '1';
+            top.style.transitionDuration = '.5s'
+        };
+        top.onmouseout = function () {
+            top.style.opacity = '0';
+            top.style.transitionDuration = '.5s'
+        };
+    }
+    topHover()
+
+    let bottomHover = function () {
+        let bottom = document.querySelector('.bottom');
+        bottom.onmouseover = function () {
+            bottom.style.opacity = '1';
+            bottom.style.transitionDuration = '.5s'
+        };
+        bottom.onmouseout = function () {
+            bottom.style.opacity = '0';
+            bottom.style.transitionDuration = '.5s'
+        };
+    }
+    bottomHover()
+}
+positionAt();
 
