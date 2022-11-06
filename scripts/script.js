@@ -118,10 +118,12 @@ let positionAt = function (anchor, position, elem) {
         let bottom = document.querySelector('.bottom');
         bottom.onmouseover = function () {
             bottom.style.opacity = '1';
+            bottom.style.transform = 'rotate(0deg)'
             bottom.style.transitionDuration = '.5s'
         };
         bottom.onmouseout = function () {
             bottom.style.opacity = '0';
+            bottom.style.transform = 'rotate(-360deg)'
             bottom.style.transitionDuration = '.5s'
         };
     }
